@@ -6,7 +6,7 @@ const port = 5500;
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-        cb(null, path.resolve(__dirname, "./file"))
+        cb(null, path.resolve(__dirname, "./"))
     },
     filename: function (req, file, cb) {
         cb(null, file.originalname)
